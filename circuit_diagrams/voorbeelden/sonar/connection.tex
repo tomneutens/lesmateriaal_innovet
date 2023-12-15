@@ -1,0 +1,48 @@
+\documentclass[preview,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}[2022/10/10]
+%\usetikzlibrary{...}% tikz package already loaded by 'tikz' option
+\usepackage[european,siunitx]{circuitikz}
+\usetikzlibrary{positioning}
+\definecolor{dwengo-blue}{RGB}{15, 95, 170}
+\makeatletter
+\begin{document}
+    \begin{circuitikz}[european]
+        \ctikzset{misc/thickness=40} % thicker open connection circle
+        \draw[fill=dwengo-blue!10] (0,0) rectangle (31,13); % The body of sonar
+        \draw[fill=dwengo-blue!25] (6.5,6.5) circle (5); % Trig 
+        \draw[fill=dwengo-blue!35] (6.5,6.5) circle (4); % Trig 
+        \draw[fill=dwengo-blue!25] (23.5,6.5) circle (5); % echo
+        \draw[fill=dwengo-blue!35] (23.5,6.5) circle (4); % echo
+        \draw[dwengo-blue] (14,1.5) node []{\rotatebox{90}{\Huge VCC}}; % IC LABEL
+        \draw[dwengo-blue] (15,1.5) node []{\rotatebox{90}{\Huge TRIG}}; % IC LABEL
+        \draw[dwengo-blue] (16,1.5) node []{\rotatebox{90}{\Huge ECHO}}; % IC LABEL
+        \draw[dwengo-blue] (17,1.5) node []{\rotatebox{90}{\Huge GND}}; % IC LABEL
+        %\draw[help lines, step=1] (0,0)grid(31,13);
+        \draw[line width=3pt](14, 0) to[short, -] (14, -2);
+        \draw[line width=3pt](15, 0) to[short, -] (15, -2);
+        \draw[line width=3pt](16, 0) to[short, -] (16, -2);
+        \draw[line width=3pt](17, 0) to[short, -] (17, -2);
+
+        \begin{scope}
+            \clip (6.5,6.5) circle (4);
+            \draw[step=0.5] (0,0) grid (31,13);
+        \end{scope}
+        \begin{scope}
+            \clip (23.5,6.5) circle (4);
+            \draw[step=0.5] (0,0) grid (31,13);
+        \end{scope}
+
+
+        \draw[fill=dwengo-blue!10] (10,-5.5) rectangle (21,-16.5); % The body of sonar
+        \draw[line width=3pt](14, 0) to[short, -] (14, -5.5);
+        \draw[line width=3pt](15, 0) to[short, -] (15, -5.5);
+        \draw[line width=3pt](16, 0) to[short, -] (16, -5.5);
+        \draw[line width=3pt](17, 0) to[short, -] (17, -5.5);
+
+        \draw[dwengo-blue] (14,-7) node []{\rotatebox{90}{\Huge +}}; % IC LABEL
+        \draw[dwengo-blue] (15,-7) node []{\rotatebox{90}{\Huge 11}}; % IC LABEL
+        \draw[dwengo-blue] (16,-7) node []{\rotatebox{90}{\Huge 12}}; % IC LABEL
+        \draw[dwengo-blue] (17,-7) node []{\rotatebox{90}{\Huge -}}; % IC LABEL
+
+        \draw[dwengo-blue] (15.5,-11) node []{\Huge µC}; % IC LABEL
+    \end{circuitikz}
+\end{document}

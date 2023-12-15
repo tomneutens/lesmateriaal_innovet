@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2101"
+   width="136.244"
+   height="61.015999"
+   viewBox="0 0 136.244 61.015999"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs2105" />
+  <g
+     id="g2109"
+     transform="matrix(1.3333333,0,0,-1.3333333,14.390666,39.320001)">
+    <g
+       id="g2111">
+      <g
+         id="g2113">
+        <path
+           d="M 0,0 H 26.64601 M 58.3944,0 h 26.64602"
+           style="fill:none;stroke:#000000;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           id="path2115" />
+        <g
+           id="g2117">
+          <g
+             id="g2119">
+            <g
+               id="g2121">
+              <path
+                 d="M -3.96848,6.34956 0,11.90543 3.96848,6.34956"
+                 style="fill:none;stroke:#000000;stroke-width:0.797;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                 id="path2123" />
+              <path
+                 d="M 0,0 V 11.90543"
+                 style="fill:none;stroke:#000000;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                 id="path2125" />
+            </g>
+          </g>
+          <g
+             id="g2127"
+             transform="translate(-10.793,19.278)">
+            <g
+               id="g2129">
+              <g
+                 id="g2131"
+                 transform="translate(0,-35.55)">
+                <text
+                   xml:space="preserve"
+                   transform="matrix(1,0,0,-1,0,35.55)"
+                   style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:CMR10;-inkscape-font-specification:CMR10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   id="text2135"><tspan
+                     x="0 7.192997 14.387987"
+                     y="0"
+                     id="tspan2133">VCC</tspan></text>
+                <g
+                   id="g2137"
+                   transform="translate(0,35.55)" />
+              </g>
+            </g>
+            <g
+               id="g2139"
+               transform="translate(10.793,-19.278)" />
+          </g>
+        </g>
+        <g
+           id="g2141" />
+        <g
+           id="g2143" />
+        <g
+           id="g2145">
+          <g
+             id="g2147">
+            <path
+               d="M 26.64601,5.95285 H 58.39439 V -5.95285 H 26.64601 Z"
+               style="fill:none;stroke:#000000;stroke-width:0.797;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path2149" />
+          </g>
+          <g
+             id="g2151"
+             transform="translate(42.52)">
+            <g
+               id="g2153" />
+            <g
+               id="g2155"
+               transform="translate(-42.52)" />
+          </g>
+        </g>
+        <g
+           id="g2157" />
+        <g
+           id="g2159" />
+        <g
+           id="g2161" />
+        <g
+           id="g2163" />
+        <g
+           id="g2165">
+          <g
+             id="g2167"
+             transform="translate(36.503,9.766)">
+            <g
+               id="g2169">
+              <g
+                 id="g2171"
+                 transform="translate(-47.296,-26.038)">
+                <text
+                   xml:space="preserve"
+                   transform="matrix(1,0,0,-1,47.296,26.038)"
+                   style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:CMMI10;-inkscape-font-specification:CMMI10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   id="text2175"><tspan
+                     x="0"
+                     y="0"
+                     id="tspan2173">R</tspan></text>
+                <text
+                   xml:space="preserve"
+                   transform="matrix(1,0,0,-1,54.86,24.543)"
+                   style="font-variant:normal;font-weight:normal;font-size:6.9738px;font-family:CMR7;-inkscape-font-specification:CMR7;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                   id="text2179"><tspan
+                     x="0"
+                     y="0"
+                     id="tspan2177">1</tspan></text>
+                <g
+                   id="g2181"
+                   transform="translate(47.296,26.038)" />
+              </g>
+            </g>
+            <g
+               id="g2183"
+               transform="translate(-36.503,-9.766)" />
+          </g>
+        </g>
+        <g
+           id="g2185">
+          <g
+             id="g2187">
+            <g
+               id="g2189">
+              <path
+                 d="M 85.04042,0 V -11.90558"
+                 style="fill:none;stroke:#000000;stroke-width:0.3985;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                 id="path2191" />
+              <path
+                 d="m 79.08757,-11.90558 h 11.9057 m -9.92132,-1.98424 h 7.93695 m -6.4488,-1.98437 h 4.96065"
+                 style="fill:none;stroke:#000000;stroke-width:0.797;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+                 id="path2193" />
+            </g>
+          </g>
+          <g
+             id="g2195"
+             transform="translate(85.039)">
+            <g
+               id="g2197" />
+            <g
+               id="g2199"
+               transform="translate(-85.039)" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

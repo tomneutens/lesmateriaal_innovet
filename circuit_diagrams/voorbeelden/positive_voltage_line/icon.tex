@@ -1,0 +1,10 @@
+\documentclass[preview,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}[2022/10/10]
+%\usetikzlibrary{...}% tikz package already loaded by 'tikz' option
+\usepackage[european,siunitx]{circuitikz}
+\makeatletter
+\begin{document}
+    \begin{circuitikz}[european]
+        \draw (0,0) 
+            node[vcc]{\SI{5}{V}};
+    \end{circuitikz}
+\end{document}

@@ -1,0 +1,67 @@
+\documentclass[tikz, border=6mm]{standalone}
+
+\usetikzlibrary{calc, intersections}
+
+\begin{document}
+\newcommand{\step}{.5}
+\begin{tikzpicture}[>=latex]
+  \draw [->] (0,0) -- ++(8,0) node [right] {$t$};
+  \draw [->] (0,-1.5) -- ++(0,3) node [midway, left] {$0$};
+  \draw [name path=zigzag] 
+  \foreach \x in {0,\step,...,6} {
+    (\x,0) -- ++(\step/4,-1.5) -- ++(\step/2,3) -- ++(\step/4,-1.5)
+  };
+
+  %RED
+  \draw [red,smooth, domain=0:2*pi+.5, name path global=wave-1] plot ({\x},{sin((\x+0) r)}) node [below right, font=\scriptsize] {$sig_1$};
+  \fill [red,name intersections={of={wave-1} and zigzag, total=\n}]
+    \foreach \i [remember=\i as \lasti (initially 2)] in {1,...,\n} {
+      \ifodd\i {}
+      \else
+        (intersection-\lasti |- 0,-2) rectangle (intersection-\i |- 0,-3)
+        (intersection-\lasti |- 0,-6) rectangle (intersection-\i |- 0,-7)  
+      \fi
+    };
+  \draw [->] (0,-3) -- ++(8,0) node [right, font=\scriptsize] {$sig_1$};
+  \draw [->] (0,-3) node [left] {0} -- ++(0,1.2) node [above] {$v_{1 N}$};      
+
+
+  %Blue
+  \draw [blue, smooth, domain=0:2*pi+.5, name path global=wave-2] plot ({\x},{sin((\x+-0.67*pi) r)}) node [right, font=\scriptsize] {$sig_2$};
+  \fill [blue,name intersections={of={wave-2} and zigzag, total=\n}]
+    \foreach \i [remember=\i as \lasti (initially 0.01)] in {1,...,\n} {
+      \ifodd\i {}
+      \else
+        (intersection-\lasti |- 0,-4) rectangle (intersection-\i |- 0,-5)
+                    (intersection-\lasti |- 0,-7) rectangle (intersection-\i |- 0,-8)
+      \fi
+    };
+  \draw [->] (0,-5) -- ++(8,0) node [right, font=\scriptsize] {$sig_2$};
+  \draw [->] (0,-5) node [left] {0} -- ++(0,1.2) node [above] {$v_{2 N}$};      
+
+
+    % Last plot    
+    \fill [white,name intersections={of={wave-1} and zigzag, total=\n}]
+      \foreach \i [remember=\i as \lasti (initially 2)] in {1,...,\n} {
+        \ifodd\i {}
+        \else
+                    ($(intersection-\lasti |- 0,-7)$) rectangle ($(intersection-\i |- 0,-8)+(0,-.1)$)
+       \fi
+       };
+
+     \fill [white,name intersections={of={wave-2} and zigzag, total=\n}]
+    \foreach \i [remember=\i as \lasti (initially 0.01)] in {1,...,\n} {
+      \ifodd\i {}
+      \else     
+        ($(intersection-\lasti |- 0,-6)+(0,.1)$) rectangle ($(intersection-\i |- 0,-7)$)
+         \fi
+            };
+
+    \draw [smooth, domain=0:2*pi+.5] plot ({\x},{-7+sin((\x+.165*pi) r)});
+
+    \draw [->] (0,-8.5) -- ++(0,3) node [midway, left] {$0$};
+    \draw [->] (0,-7) -- ++(8,0) node [right] {$t$};
+
+
+  \end{tikzpicture}
+\end{document}

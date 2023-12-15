@@ -1,0 +1,28 @@
+\documentclass[preview,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}[2022/10/10]
+%\usetikzlibrary{...}% tikz package already loaded by 'tikz' option
+\usepackage[european,siunitx]{circuitikz}
+\makeatletter
+\begin{document}
+    \begin{circuitikz}[european]
+        \draw (0,0) 
+            node[vcc]{\SI{5}{V}}
+            to [short] (0.5,0)
+            to [short, -*, name=pa] (0.5,0)
+            to[R, l=\mbox{$R_1$}] (2.5,0)
+            to [short, -*, name=pb] (2.5,0)
+            to [R, l=\mbox{$R_2$}] (4.5, 0)
+            to [short, -*, name=pc] (4.5,0)
+            to [R, l=\mbox{$R_3$}] (6.5, 0)
+            to [short, -*, name=pd] (6.5,0)
+            to [R, l=\mbox{$R_4$}] (8.5, 0)
+            to [short, -*, name=pe] (8.5,0)
+            to [short] (9,0)
+            node[sground](ground){};
+        \node[above=3mm, anchor=center] at (pa) {$a$};
+        \node[above=3mm, anchor=center] at (pb) {$b$};
+        \node[above=3mm, anchor=center] at (pc) {$c$};
+        \node[above=3mm, anchor=center] at (pd) {$d$};
+        \node[above=3mm, anchor=center] at (pe) {$e$};
+
+    \end{circuitikz}
+\end{document}

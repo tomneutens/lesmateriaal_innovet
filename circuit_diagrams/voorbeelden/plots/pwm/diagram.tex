@@ -1,0 +1,39 @@
+\documentclass[tikz, border=6mm]{standalone}
+
+\usetikzlibrary{intersections}
+\usepackage{xcolor}
+
+\definecolor{dwengo-blue}{RGB}{15, 95, 170}
+\definecolor{dwengo-dark-blue}{RGB}{15, 93, 109}
+\definecolor{dwengo-green-blue}{RGB}{17, 91, 78}
+\definecolor{dwengo-dark-green}{RGB}{17, 89, 51}
+\definecolor{dwengo-green}{RGB}{60, 130, 39}
+\definecolor{dwengo-light-green}{RGB}{115, 181, 30}
+\definecolor{dwengo-orange}{RGB}{244, 167, 44}
+\definecolor{dwengo-pink}{RGB}{232, 123, 102}
+
+\begin{document}
+\newcommand{\step}{.25}
+  \begin{tikzpicture}[>=latex]
+    
+    \draw [name path=sawtooth, line width=0.1pt,line join=miter, transparent] 
+      \foreach \x in {0,\step,...,6} {
+        % (\x,1.0) -- ++(0,-2.0) -- ++(\step,2.0) % y domain = -1.0 -- 1.0
+        (\x,1.5) -- ++(0,-3) -- ++(\step,3) % y domain = -1.4 -- 1.4
+      };
+
+      \draw [transparent,smooth, domain=0:2*pi, name path global=wave-1,line width=0.1pt] plot ({\x},{sin((\x+0) r)}) node [below right, font=\scriptsize] {$sin(t)$};
+      \draw [dwengo-blue,name intersections={of={wave-1} and sawtooth, total=\n}]
+        \foreach \i [remember=\i as \lasti (initially 1)] in {2,...,\n} {
+         \ifodd\i {}
+          \else
+            (intersection-\lasti |- 0,-1) rectangle (intersection-\i |- 0,1)  
+          \fi
+        } node [below right, font=\scriptsize] {PWM\ signaal};    
+
+        \draw [->] (0,-1) -- ++(8,0) node [right] {$t$};
+        \draw [->] (0,-1) node [left] {$0$} -- ++(0,2.5) node [left] {$V$};
+        \draw [dwengo-orange,smooth, domain=0:2*pi, name path global=wave-1,line width=0.4pt] plot ({\x},{sin((\x+0) r)}) node [below right, font=\scriptsize] {$sin(t)$};
+
+  \end{tikzpicture}
+\end{document}

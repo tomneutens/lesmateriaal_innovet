@@ -1,0 +1,19 @@
+\documentclass[preview,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}[2022/10/10]
+%\usetikzlibrary{...}% tikz package already loaded by 'tikz' option
+\usepackage[european,siunitx]{circuitikz}
+\definecolor{dwengo-blue}{RGB}{15, 95, 170}
+\makeatletter
+\begin{document}
+    \begin{circuitikz}[european]
+        \draw 
+            (0.5,0) to [short, -, name=p1] (0.5,0)
+            to[led, l=\mbox{led}] (2.5,0)
+            to [R, l=\mbox{$220K \si{\ohm}$}] (4.5, 0)
+            to [short, -, name=p3] (4.5,0)
+            to [short] (5,0)
+            node[sground](ground){};
+        \draw[fill=dwengo-blue!10] (-0.5,-0.5) rectangle (0.5,0.5); % The body of IC
+        \draw[dwengo-blue] (-0.25,0.25) node [align=center]{µC}; % IC LABEL
+        \draw[black] (0.25,0) node [align=center]{\footnotesize 13}; % PIN LABEL
+    \end{circuitikz}
+\end{document}
