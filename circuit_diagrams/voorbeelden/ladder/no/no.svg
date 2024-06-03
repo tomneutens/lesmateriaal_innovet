@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="46.493038"
+   height="33.744339"
+   viewBox="0 0 46.493038 33.744339"
+   sodipodi:docname="no.pdf"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false" />
+  <g
+     id="g10"
+     inkscape:groupmode="layer"
+     inkscape:label="Page 1"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,24.445754)">
+    <g
+       id="g12">
+      <g
+         id="g14">
+        <g
+           id="g16" />
+        <g
+           id="g18">
+          <g
+             id="g20">
+            <path
+               d="M 12.2044,6.97394 V -6.97394 M 22.66531,6.97394 V -6.97394"
+               style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path22" />
+            <g
+               id="g24"
+               transform="translate(17.435)">
+              <g
+                 id="g26" />
+              <g
+                 id="g28"
+                 transform="translate(-17.435)" />
+            </g>
+            <g
+               id="g30"
+               transform="translate(17.435)">
+              <g
+                 id="g32" />
+              <g
+                 id="g34"
+                 transform="translate(-17.435)" />
+            </g>
+          </g>
+          <g
+             id="g36">
+            <g
+               id="g38"
+               transform="translate(13.699,11.091)">
+              <g
+                 id="g40">
+                <g
+                   id="g42"
+                   transform="translate(-14.097,-18.065)">
+                  <text
+                     xml:space="preserve"
+                     transform="matrix(1,0,0,-1,14.097,18.065)"
+                     style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:CMMI10;-inkscape-font-specification:CMMI10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                     id="text46"><tspan
+                       x="0"
+                       y="0"
+                       id="tspan44">A</tspan></text>
+                  <g
+                     id="g48"
+                     transform="translate(14.097,18.065)" />
+                </g>
+              </g>
+              <g
+                 id="g50"
+                 transform="translate(-13.699,-11.091)" />
+            </g>
+          </g>
+        </g>
+        <path
+           d="M 0,0 H 11.80591 M 23.06383,0 H 34.86978 V 0"
+           style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           id="path52" />
+      </g>
+    </g>
+  </g>
+</svg>

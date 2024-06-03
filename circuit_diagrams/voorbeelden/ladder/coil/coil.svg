@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg2"
+   width="47.554668"
+   height="40.173332"
+   viewBox="0 0 47.554668 40.173332"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <g
+     id="g10"
+     transform="matrix(1.3333333,0,0,-1.3333333,0.53066665,30.876)">
+    <g
+       id="g12">
+      <g
+         id="g14">
+        <g
+           id="g16" />
+        <g
+           id="g18">
+          <g
+             id="g20">
+            <path
+               d="M 12.41357,6.97394 C 9.92252,4.97676 8.6858,1.8014 9.16985,-1.35449 9.50919,-3.56703 10.66716,-5.57272 12.41357,-6.9729 M 22.45616,6.97394 C 24.94722,4.97676 26.18393,1.8014 25.69989,-1.35449 25.36055,-3.56703 24.20258,-5.57272 22.45616,-6.9729"
+               style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+               id="path22" />
+            <g
+               id="g24"
+               transform="translate(17.435)">
+              <g
+                 id="g26" />
+              <g
+                 id="g28"
+                 transform="translate(-17.435)" />
+            </g>
+            <g
+               id="g30"
+               transform="translate(17.435)">
+              <g
+                 id="g32" />
+              <g
+                 id="g34"
+                 transform="translate(-17.435)" />
+            </g>
+          </g>
+          <g
+             id="g36">
+            <g
+               id="g38"
+               transform="translate(13.497,13.028)">
+              <g
+                 id="g40">
+                <g
+                   id="g42"
+                   transform="translate(-13.895,-20.001)">
+                  <text
+                     xml:space="preserve"
+                     transform="matrix(1,0,0,-1,13.895,20.001)"
+                     style="font-variant:normal;font-weight:normal;font-size:9.9626px;font-family:CMMI10;-inkscape-font-specification:CMMI10;writing-mode:lr-tb;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"
+                     id="text46"><tspan
+                       x="0"
+                       y="0"
+                       id="tspan44">Q</tspan></text>
+                  <g
+                     id="g48"
+                     transform="translate(13.895,20.001)" />
+                </g>
+              </g>
+              <g
+                 id="g50"
+                 transform="translate(-13.497,-13.028)" />
+            </g>
+          </g>
+        </g>
+        <path
+           d="m 0,0 h 8.66766 m 17.53441,0 h 8.66771 v 0"
+           style="fill:none;stroke:#000000;stroke-width:0.79701;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-dasharray:none;stroke-opacity:1"
+           id="path52" />
+      </g>
+    </g>
+  </g>
+</svg>

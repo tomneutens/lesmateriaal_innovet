@@ -1,0 +1,12 @@
+\documentclass[preview,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}[2022/10/10]
+%\usetikzlibrary{...}% tikz package already loaded by 'tikz' option
+\usepackage[european,siunitx]{circuitikz}
+\usetikzlibrary[circuits.plc.ladder]
+\makeatletter
+\begin{document}
+    \begin{tikzpicture}[circuit plc ladder,thick,ladderrungsep=0.8]
+        \draw(0,0)
+        to [contact NC={info={$A$},name=ca}] ++(1,0);
+    \end{tikzpicture}
+
+\end{document}
