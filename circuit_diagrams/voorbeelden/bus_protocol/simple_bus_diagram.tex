@@ -1,0 +1,39 @@
+\documentclass[preview,tikz,convert={outext=.svg,command=\unexpanded{pdf2svg \infile\space\outfile}},multi=false]{standalone}[2022/10/10]
+%\usetikzlibrary{...}% tikz package already loaded by 'tikz' option
+\usepackage[european,siunitx]{circuitikz}
+\definecolor{dwengo-blue}{RGB}{15, 95, 170}
+\makeatletter
+\begin{document}
+    \begin{circuitikz}[european]
+        \draw (-5,0)  
+            to[short] (5,0);
+
+
+        \draw[fill=dwengo-blue!10] (1.75,1) rectangle (3.25,2.5); % The body of IC
+        \draw[dwengo-blue] (2.5,1.95) node [align=center]{\LARGE µC}; % IC LABEL
+        \draw[black] (2.5,1.25) node [align=center]{\footnotesize Master}; % PIN LABEL
+        \draw (2.5,1) 
+            to[short] (2.5,0);
+
+        \draw[fill=dwengo-blue!10] (-0.25,-1) rectangle (1.25,-2.5); % The body of IC
+        \draw[dwengo-blue] (0.5,-1.95) node [align=center]{ Sensor 1}; % IC LABEL
+        \draw[black] (0.5,-1.25) node [align=center]{\footnotesize Slave 1}; % PIN LABEL
+        \draw (0.5,-1) 
+            to[short] (0.5,0);
+
+        \draw[fill=dwengo-blue!10] (-2.25,1) rectangle (-0.75,2.5); % The body of IC
+        \draw[dwengo-blue] (-1.5,1.95) node [align=center]{Sensor 2}; % IC LABEL
+        \draw[black] (-1.5,1.25) node [align=center]{\footnotesize Slave 2}; % PIN LABEL
+        \draw (-1.5,1) 
+            to[short] (-1.5,0);
+
+        \draw[fill=dwengo-blue!10] (-4.25,-1) rectangle (-2.75,-2.5); % The body of IC
+        \draw[dwengo-blue] (-3.5,-1.95) node [align=center]{ Sensor 1}; % IC LABEL
+        \draw[black] (-3.5,-1.25) node [align=center]{\footnotesize Slave 3}; % PIN LABEL
+        \draw (-3.5,-1) 
+            to[short] (-3.5,0);
+
+
+        
+    \end{circuitikz}
+\end{document}
